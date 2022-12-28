@@ -8,5 +8,6 @@ imageio
 nibabel
 scipy
 scikit-image
-glob3
+glob2
 tqdm
+pyyaml
