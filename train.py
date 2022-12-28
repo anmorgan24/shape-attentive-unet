@@ -336,7 +336,7 @@ if __name__ == '__main__':
     assert LooseVersion(torch.__version__) >= LooseVersion('0.4.0'), \
         'PyTorch>=0.4.0 is required'
 
-    DATA_ROOT = os.getenv('DATA_ROOT', '/PATH/TO/AC17/DATA')
+    DATA_ROOT = os.getenv('DATA_ROOT', './data/data')
     DATASET_NAME = "AC17"
 
     parser = argparse.ArgumentParser()
