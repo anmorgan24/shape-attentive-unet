@@ -10,7 +10,7 @@ import re
 import sys
 import threading
 import traceback
-from torch._six import string_classes, int_classes
+from torch._six import string_classes
 import numpy as np
 
 if sys.version_info[0] == 2:
@@ -18,6 +18,7 @@ if sys.version_info[0] == 2:
 else:
     import queue
 
+int_classes = int
 
 class ExceptionWrapper(object):
     r"Wraps an exception plus traceback to communicate across threads"
